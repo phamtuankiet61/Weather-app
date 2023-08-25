@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&family=Tilt+Prism&display=swap');
+
+:root {
+    --text-color: #e5e8e9;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
+    background-color: #f6f6f6;
+}
+
+.app {
+    width: 350px;
+    /* height: 500px; */
+    background-image: linear-gradient(45deg ,#2b9cba, #58c1dc);
+    border-radius: 6px;
+}
+
+.main {
+    text-align: center;
+    padding: 20px 0 40px 0;
+}
+
+.search {
+    display: inline-block;
+    position: relative;
+    border-bottom: 2px solid var(--text-color);
+}
+/* 
+.sun {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.sunrise {
+    width: 100px;
+    height: 100px;
+} */
+
+.search input {
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-left: 15px;
+    caret-color: var(--text-color);
+    color: var(--text-color);
+    padding: 6px 10px;font-size: 1.5rem;
+}
+
+::-webkit-input-placeholder { 
+    color: var(--text-color);
+}
+
+.search .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+}
+
+.city-name {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+.weather-state {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.temperature {
+    font-size: 6rem;
+    position: relative;
+}
+
+.temperature::after {
+    content: "o";
+    font-size: 2rem;
+    position: absolute;
+}
+
+.footer {
+    border-top: 1px solid var(--text-color);
+}
+
+.row {
+    display: flex;
+    padding: 20px 15px;
+}
+
+.column {
+    flex-grow: 1;
+}
+
+.label {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: white;
+}
+
+.value {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    color: var(--text-color)
+}
